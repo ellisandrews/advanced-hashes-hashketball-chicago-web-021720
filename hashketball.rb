@@ -111,7 +111,7 @@ def game_hash
           slam_dunks: 0
         },
         {
-          player_name: "",
+          player_name: "Kemba Walker",
           number: 0,
           shoe: 0,
           points: 0,
