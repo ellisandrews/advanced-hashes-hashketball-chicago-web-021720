@@ -205,6 +205,9 @@ def big_shoe_rebounds
         shoe_size = player[:shoe]
         largest_shoe_size_player = player[:player_name]
       end
+      puts player[:player_name]
+      puts player[:shoe]
+      puts ""
     end
   end
   lookup_player_stat(largest_shoe_size_player, :rebounds)
