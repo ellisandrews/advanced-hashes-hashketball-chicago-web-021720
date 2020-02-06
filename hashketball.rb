@@ -8,7 +8,7 @@ def game_hash
           player_name: "Alan Anderson",
           number: 0,
           shoe: 16,
-          points: 0,
+          points: 22,
           rebounds: 0,
           assists: 0,
           steals: 0,
