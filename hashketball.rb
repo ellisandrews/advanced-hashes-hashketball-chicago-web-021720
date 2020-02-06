@@ -128,9 +128,7 @@ end
 
 
 def lookup_player_stat(player_name, stat)
-  data = game_hash()
-  
-  data.each_value do |team_data|
+  game_hash.each_value do |team_data|
     team_data[:players].each do |player|
       if player[:player_name] == player_name
         return player[stat]
@@ -151,9 +149,7 @@ end
 
 
 def team_colors(team_name)
-  data = game_hash()
-  
-  data.each_value do |team_data|
+  game_hash.each_value do |team_data|
     if team_data[:team_name] == team_name
       return team_data[:colors]
     end
@@ -162,9 +158,8 @@ end
 
 
 def team_names
-  data = game_hash()
   teams = []
-  data.each_value do |team_data|
+  game_hash.each_value do |team_data|
     teams << team_data[:team_name]
   end
   teams
@@ -172,9 +167,8 @@ end
 
 
 def player_numbers(team_name)
-  data = game_hash()
   numbers = []
-  data.each_value do |team_data|
+  game_hash.each_value do |team_data|
     if team_data[:team_name] == team_name
       team_data[:players].each do |player|
         numbers << player[:number]
@@ -186,9 +180,8 @@ end
 
 
 def player_stats(player_name)
-  data = game_hash()
   player_stats = {}
-  data.each_value do |team_data|
+  game_hash.each_value do |team_data|
     team_data[:players].each do |player|
       if player[:player_name] == player_name
         player.each do |stat, value|
@@ -203,4 +196,6 @@ def player_stats(player_name)
 end
 
 
-def big_shoe_rebounds()
+def big_shoe_rebounds
+  
+end
