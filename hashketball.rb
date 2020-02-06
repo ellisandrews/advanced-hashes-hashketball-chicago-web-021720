@@ -197,5 +197,16 @@ end
 
 
 def big_shoe_rebounds
-  
+  shoe_size = 0  # Initialize shoe size at 0 for finding the max
+  largest_shoe_size_player = ""
+  game_hash.each_value do |team_data|
+    team_data[:players] do |player|
+      if player[:shoe] > shoe_size
+        
+      end
+    end
+  end
 end
+
+
+
