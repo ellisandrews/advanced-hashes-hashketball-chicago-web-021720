@@ -18,7 +18,7 @@ def game_hash
         {
           player_name: "Reggie Evans",
           number: 30,
-          shoe: 0,
+          shoe: 14,
           points: 0,
           rebounds: 0,
           assists: 0,
