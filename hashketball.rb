@@ -187,11 +187,17 @@ end
 
 def player_stats(player_name)
   data = game_hash()
+  player_stats = {}
   data.each_value do |team_data|
     team_data[:players].each do |player|
       if player[:player_name] == player_name
-        return player
+        player.each do |stat, value|
+          if stat != :player_name
+            player_stats[stat] = value
+          end
+        end
       end
     end
   end
+  player_stats
 end
