@@ -9,7 +9,7 @@ def game_hash
           number: 0,
           shoe: 16,
           points: 22,
-          rebounds: 0,
+          rebounds: 12,
           assists: 0,
           steals: 0,
           blocks: 0,
