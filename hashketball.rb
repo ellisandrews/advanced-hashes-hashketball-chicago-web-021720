@@ -246,5 +246,14 @@ def winning_team
     points_data[team_name] = team_points_total
   end
   
+  winner = ""
+  winning_points = 0
+  points_data.each do |team, points|
+    if points > winning_points
+      winner = team
+      winning_points = points
+    end
+  end
   
+  winner
 end
