@@ -17,7 +17,7 @@ def game_hash
         },
         {
           player_name: "",
-          number: 0,
+          number: 30,
           shoe: 0,
           points: 0,
           rebounds: 0,
