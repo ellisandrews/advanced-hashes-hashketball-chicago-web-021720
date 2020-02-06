@@ -214,6 +214,23 @@ def big_shoe_rebounds
 end
 
 
+def highest_stat_player(stat)
+  stat_value = 0 
+  highest_scoring_player = ""
+  
+  game_hash.each_value do |team_data|
+    team_data[:players].each do |player|
+      if player[:points] > points
+        points = player[:points]
+        highest_scoring_player = player[:player_name]
+      end
+    end
+  end
+  
+  highest_scoring_player
+end
+
+
 def most_points_scored
   points = 0 
   highest_scoring_player = ""
@@ -273,3 +290,11 @@ def player_with_longest_name
 end
 
 
+def player_with_most_steals
+  
+end
+
+
+def long_name_steals_a_ton?
+  
+end
