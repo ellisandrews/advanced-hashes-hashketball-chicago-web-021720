@@ -167,6 +167,7 @@ def team_names
   data.each do |team, team_data|
     teams << team_data[:team_name]
   end
+  teams
 end
 
 
