@@ -278,11 +278,6 @@ def player_with_longest_name
 end
 
 
-def player_with_most_steals
-  
-end
-
-
 def long_name_steals_a_ton?
-  
+  highest_stat_player(:steals) == player_with_longest_name
 end
