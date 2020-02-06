@@ -93,9 +93,9 @@ def game_hash
           number: 2,
           shoe: 14,
           points: 24,
-          rebounds: 0,
-          assists: 0,
-          steals: 0,
+          rebounds: 12,
+          assists: 12,
+          steals: ,
           blocks: 0,
           slam_dunks: 0
         },
