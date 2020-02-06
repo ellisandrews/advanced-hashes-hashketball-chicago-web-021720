@@ -229,3 +229,8 @@ def most_points_scored
   
   highest_scoring_player
 end
+
+
+def winning_team
+  
+end
