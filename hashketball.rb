@@ -80,8 +80,8 @@ def game_hash
         {
           player_name: "Bismack Biyombo",
           number: 0,
-          shoe: 0,
-          points: 0,
+          shoe: 16,
+          points: 12,
           rebounds: 0,
           assists: 0,
           steals: 0,
