@@ -232,5 +232,19 @@ end
 
 
 def winning_team
+  points_data = {}
+  
+  game_hash.each_value do |team_data|
+    
+    team_name = team_data[:team_name]
+    team_points_total = 0
+    
+    team_data[:players].each do |player|
+      team_points_total += player[:points]
+    end
+    
+    points_data[team_name] = team_points_total
+  end
+  
   
 end
