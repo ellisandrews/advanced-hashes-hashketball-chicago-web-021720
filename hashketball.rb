@@ -216,18 +216,18 @@ end
 
 def highest_stat_player(stat)
   stat_value = 0 
-  highest_scoring_player = ""
+  highest_stat_player = ""
   
   game_hash.each_value do |team_data|
     team_data[:players].each do |player|
-      if player[:points] > points
-        points = player[:points]
-        highest_scoring_player = player[:player_name]
+      if player[stat] > stat_value
+        stat_value = player[stat]
+        highest_stat_player = player[:player_name]
       end
     end
   end
   
-  highest_scoring_player
+  highest_stat_player
 end
 
 
