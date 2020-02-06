@@ -1,9 +1,9 @@
 def game_hash
   {
     home: {
-      team_name: ""
-      colors:
-      players:
+      team_name: "",
+      colors: [""],
+      players: 
     },
     
     away: 
