@@ -175,6 +175,7 @@ def player_numbers(team_name)
   data = game_hash()
   numbers = []
   data.each_value do |team_data|
+    
   end
 end
 
